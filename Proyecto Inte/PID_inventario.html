@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="C:\Users\Fabian\Desktop\tarea ca\modifi\PID_INVENTARIO1.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>BARBERÍA</h2>
+                <button class="cerrar-menu">×</button>
+            </div>
+
+            <nav class="menu">
+                <a href="#" class="menu-item">
+                    <span class="icono">⌂</span>
+                    <span>Inicio</span>
+                    <span class="flecha">⌄</span>
+                </a>
+
+                <a href="#" class="menu-item activo">
+                    <span class="icono">▣</span>
+                    <span>Inventario</span>
+                    <span class="flecha">⌄</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="icono">🛒</span>
+                    <span>Ventas</span>
+                    <span class="flecha">⌄</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="icono">♙</span>
+                    <span>Gastos</span>
+                    <span class="flecha">⌄</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="icono">▥</span>
+                    <span>Reportes</span>
+                    <span class="flecha">⌄</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="icono">⚙</span>
+                    <span>Configuración</span>
+                    <span class="flecha">⌄</span>
+                </a>
+            </nav>
+
+            <div class="separador"></div>
+
+            <a href="#" class="cerrar-sesion">
+                <span class="icono">⇥</span>
+                <span>Cerrar sesión</span>
+            </a>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido">
+
+            <header class="encabezado">
+                <div></div>
+
+                <div class="usuario">
+                    <span class="usuario-icono">●</span>
+                    <span></span>
+                    <span class="flecha">⌄</span>
+                </div>
+            </header>
+
+            <!-- TÍTULO -->
+            <section class="titulo-seccion">
+                <h1>Inventario</h1>
+                <p></p>
+            </section>
+
+            <!-- BUSCADOR Y BOTÓN -->
+            <section class="herramientas">
+
+                <div class="buscador">
+                    <span class="lupa">⌕</span>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+
+                <button class="btn-agregar">
+                    <span>＋</span>
+                    Agregar
+                </button>
+
+            </section>
+
+            <!-- TABLA VACÍA -->
+            <section class="tabla-contenedor">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="acciones">
+                                <span class="editar">✎</span>
+                                <span class="eliminar">▣</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- PAGINACIÓN VACÍA -->
+                <div class="pie-tabla">
+
+                    <div class="paginacion">
+                        <span class="pagina seleccionada"></span>
+                        <span class="pagina"></span>
+                        <span class="pagina"></span>
+                        <span class="pagina siguiente">›</span>
+                    </div>
+
+                    <p></p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
