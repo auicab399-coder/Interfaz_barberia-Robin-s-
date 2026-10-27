@@ -1,0 +1,202 @@
+/* ===== ENCABEZADO Y TÍTULO ===== */
+.encabezado {
+    height: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 17px;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    font-size: 11px;
+}
+
+.usuario-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: #252525;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 9px;
+}
+
+.usuario-flecha { color: #777; font-size: 12px; }
+
+.titulo-seccion { margin-bottom: 17px; }
+.titulo-seccion h1 { font-size: 21px; color: #292d32; margin-bottom: 3px; }
+.titulo-seccion p { color: #888e95; font-size: 11px; }
+
+/* ===== ÁREA DE CONFIGURACIÓN ===== */
+.configuracion {
+    display: flex;
+    gap: 12px;
+    min-height: 400px;
+    background: #fff;
+    border: 1px solid #e5e8ec;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.menu-config {
+    width: 145px;
+    min-width: 145px;
+    padding: 2px 8px 0 0;
+    border-right: 1px solid #eceef1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.opcion-config {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 7px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: #454b52;
+}
+
+.opcion-config span { width: 16px; font-size: 14px; text-align: center; }
+
+.opcion-config:hover,
+.opcion-config.activa { background: #f3ead9; font-weight: bold; }
+
+.panel-config { flex: 1; min-width: 0; }
+
+.pestanas {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-height: 30px;
+    border-bottom: 1px solid #e9ebee;
+    margin-bottom: 10px;
+}
+
+.pestana { font-size: 10px; color: #7a8189; padding: 7px 0; white-space: nowrap; }
+
+.pestana.activa {
+    color: #343a40;
+    font-weight: bold;
+    border-bottom: 2px solid #ad8b50;
+}
+
+.panel-cuerpo {
+    display: grid;
+    grid-template-columns: minmax(160px, 1.15fr) minmax(100px, .7fr) minmax(150px, 1fr);
+    gap: 10px;
+    align-items: stretch;
+}
+
+.formulario, .logo-config, .horario { min-width: 0; }
+
+.formulario h2, .horario h2 { font-size: 11px; color: #343a40; margin-bottom: 12px; }
+
+.formulario label { display: block; font-size: 9px; color: #747b83; margin: 8px 0 4px; }
+
+.formulario input {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 28px;
+    padding: 0 8px;
+    border: 1px solid #e3e6e9;
+    border-radius: 4px;
+    background: #fff;
+    color: #555d65;
+    font-size: 10px;
+}
+
+.logo-config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 4px;
+}
+
+.logo-muestra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 85px;
+    color: #252525;
+    font-family: Georgia, serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.logo-muestra span { font-size: 13px; }
+.logo-muestra strong { font-size: 24px; line-height: 1.1; }
+
+.btn-secundario, .btn-guardar {
+    border: none;
+    border-radius: 5px;
+    background: #ad8b50;
+    color: #fff;
+    font-size: 10px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.horario { border: 1px solid #e8ebee; border-radius: 5px; padding: 12px 9px; }
+
+.fila-horario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    margin: 9px 0;
+}
+
+.fila-horario label { font-size: 9px; color: #656d75; }
+
+.fila-horario input {
+    width: 105px;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    text-align: right;
+    color: #656d75;
+    font-size: 9px;
+    outline: none;
+}
+
+.btn-guardar { display: block; margin: 12px 0 0 auto; padding: 9px 14px; }
+
+/* ===== RESPONSIVE (solo lo de esta página) ===== */
+@media screen and (max-width: 900px) {
+    .panel-cuerpo { grid-template-columns: minmax(150px, 1fr) minmax(100px, .7fr); }
+    .horario { grid-column: 1 / -1; }
+    .fila-horario input { width: 150px; }
+}
+
+@media screen and (max-width: 700px) {
+    .configuracion { flex-direction: column; }
+    .menu-config {
+        width: 100%;
+        min-width: 0;
+        border-right: none;
+        border-bottom: 1px solid #eceef1;
+        padding: 0 0 8px;
+    }
+    .pestanas { gap: 12px; flex-wrap: wrap; }
+}
+
+@media screen and (max-width: 500px) {
+    .titulo-seccion h1 { font-size: 18px; }
+    .panel-cuerpo { grid-template-columns: 1fr; }
+    .horario { grid-column: auto; }
+    .logo-config { min-height: 120px; }
+}

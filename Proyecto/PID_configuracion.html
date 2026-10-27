@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+        <link rel="stylesheet" href="PID_CSS/PID_Menu_D.css">
+        <link rel="stylesheet" href="PID_CSS/PID_configuracion.css">
+</head>
+<body>
+    <div class="app">
+
+        <div id="menu-root"></div>
+
+        <main class="app-contenido">
+            <header class="encabezado">
+                <div></div>
+                <div class="usuario">
+                    <span class="usuario-icono">●</span>
+                    <span>admin</span>
+                    <span class="usuario-flecha">⌄</span>
+                </div>
+            </header>
+
+            <section class="titulo-seccion">
+                <h1>Configuración</h1>
+                <p>Ajustes del sistema y datos de la barbería</p>
+            </section>
+
+            <section class="configuracion">
+                <aside class="menu-config">
+                    <a href="#general" class="opcion-config activa"><span>⌂</span>Información general</a>
+                    <a href="#usuarios" class="opcion-config"><span>♟</span>Usuarios</a>
+                    <a href="#contrasena" class="opcion-config"><span>♧</span>Cambiar contraseña</a>
+                    <a href="#datos" class="opcion-config"><span>⬡</span>Datos de la barbería</a>
+                </aside>
+
+                <div class="panel-config">
+                    <nav class="pestanas">
+                        <a href="#general" class="pestana activa">Datos de la barbería</a>
+                        <a href="#usuarios" class="pestana">Usuario</a>
+                        <a href="#contrasena" class="pestana">Cambiar contraseña</a>
+                    </nav>
+
+                    <div class="panel-cuerpo" id="general">
+                        <section class="formulario">
+                            <h2>Información general</h2>
+                            <label for="nombre">Nombre de la barbería</label>
+                            <input id="nombre" type="text" value="Barbería Robin's">
+
+                            <label for="direccion">Dirección</label>
+                            <input id="direccion" type="text" value="Av. Principal #123, Ciudad">
+
+                            <label for="telefono">Teléfono</label>
+                            <input id="telefono" type="tel" value="987 654 3210">
+
+                            <label for="correo">Correo</label>
+                            <input id="correo" type="email" value="barberiarobins@gmail.com">
+                        </section>
+
+                        <section class="logo-config">
+                            <div class="logo-muestra">
+                                <span>Barbería</span>
+                                <strong>Robin's</strong>
+                            </div>
+                            <button class="btn-secundario" type="button">Cambiar logo</button>
+                        </section>
+
+                        <section class="horario">
+                            <h2>Horario de atención</h2>
+                            <div class="fila-horario"><label for="lunes">Lunes</label><input id="lunes" value="10:00 AM - 8:00 PM"></div>
+                            <div class="fila-horario"><label for="martes">Martes</label><input id="martes" value="10:00 AM - 8:00 PM"></div>
+                            <div class="fila-horario"><label for="miercoles">Miércoles</label><input id="miercoles" value="10:00 AM - 8:00 PM"></div>
+                            <div class="fila-horario"><label for="jueves">Jueves</label><input id="jueves" value="10:00 AM - 8:00 PM"></div>
+                            <div class="fila-horario"><label for="viernes">Viernes</label><input id="viernes" value="10:00 AM - 8:00 PM"></div>
+                            <div class="fila-horario"><label for="sabado">Sábado</label><input id="sabado" value="10:00 AM - 6:00 PM"></div>
+                            <div class="fila-horario"><label for="domingo">Domingo</label><input id="domingo" value="Cerrado"></div>
+                            <button class="btn-guardar" type="button">Guardar cambios</button>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="js/PID_menu_d.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="PID_CSS/PID_Menu_D.css">
+    <link rel="stylesheet" href="PID_CSS\PID_reportes.css">
+</head>
+<body>
+    	<div class="app">
+
+        <div id="menu-root"></div>
+
+        <main class="app-contenido">
+            <header class="encabezado">
+                <div></div>
+                <div class="usuario">
+                    <span class="usuario-icono">●</span>
+                    <span>admin</span>
+                    <span class="usuario-flecha">⌄</span>
+                </div>
+            </header>
+
+            <section class="titulo-seccion">
+                <h1>Reportes</h1>
+                <p>Consulta de información financiera</p>
+            </section>
+
+            <section class="filtros-reporte">
+                <div class="filtro-fechas">
+                    <span>▣</span>
+                    <input type="date" value="2026-10-01" aria-label="Fecha inicial">
+                    <span>-</span>
+                    <input type="date" value="2026-10-13" aria-label="Fecha final">
+                </div>
+
+                <button class="btn-filtrar">⌕ Filtrar</button>
+            </section>
+
+            <section class="resumen">
+                <article class="tarjeta ventas">
+                    <div class="icono-tarjeta">▣</div>
+                    <div>
+                        <p>Total ventas</p>
+                        <h2>$ 5,680.00</h2>
+                    </div>
+                </article>
+
+                <article class="tarjeta gastos">
+                    <div class="icono-tarjeta">▣</div>
+                    <div>
+                        <p>Total gastos</p>
+                        <h2>$ 1,320.00</h2>
+                    </div>
+                </article>
+
+                <article class="tarjeta ganancias">
+                    <div class="icono-tarjeta">◉</div>
+                    <div>
+                        <p>Ganancia</p>
+                        <h2>$ 4,360.00</h2>
+                    </div>
+                </article>
+            </section>
+
+            <section class="reporte-tabla">
+                <nav class="pestanas">
+                    <button class="pestana activa">Ventas</button>
+                    <button class="pestana">Gastos</button>
+                    <button class="pestana">Ganancias</button>
+                </nav>
+
+                <div class="tabla-contenedor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th>Cantidad</th>
+                                <th>Precio unitario</th>
+                                <th>Total</th>
+                                <th>Método de pago</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>13/10/2026</td>
+                                <td>Corte de cabello</td>
+                                <td>1</td>
+                                <td>$ 200.00</td>
+                                <td>$ 200.00</td>
+                                <td>Efectivo</td>
+                            </tr>
+                            <tr>
+                                <td>12/10/2026</td>
+                                <td>Corte y barba</td>
+                                <td>1</td>
+                                <td>$ 290.00</td>
+                                <td>$ 290.00</td>
+                                <td>Tarjeta</td>
+                            </tr>
+                            <tr>
+                                <td>12/10/2026</td>
+                                <td>Corte de cabello</td>
+                                <td>2</td>
+                                <td>$ 200.00</td>
+                                <td>$ 400.00</td>
+                                <td>Efectivo</td>
+                            </tr>
+                            <tr>
+                                <td>11/10/2026</td>
+                                <td>Diseño de barba</td>
+                                <td>1</td>
+                                <td>$ 150.00</td>
+                                <td>$ 150.00</td>
+                                <td>Transferencia</td>
+                            </tr>
+                            <tr>
+                                <td>10/10/2026</td>
+                                <td>Corte y barba</td>
+                                <td>1</td>
+                                <td>$ 290.00</td>
+                                <td>$ 290.00</td>
+                                <td>Efectivo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pie-tabla">
+                        <div class="paginacion">
+                            <button class="pagina seleccionada">1</button>
+                            <button class="pagina">2</button>
+                            <button class="pagina">3</button>
+                            <button class="pagina siguiente">›</button>
+                        </div>
+
+                        <p>Mostrando 1 - 5 de 11</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+<script src="js/PID_menu_d.js"></script>
+</body>
+</html>
