@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+        <link rel="stylesheet" href="PID_CSS/PID_Menu_D.css">
+        <link rel="stylesheet" href="PID_CSS/PID_gastos.css">
+</head>
+<body>
+       	<div class="app">
+
+        <div id="menu-root"></div>
+
+        <main class="app-contenido">
+            <header class="encabezado">
+                <div></div>
+                <div class="usuario">
+                    <span class="usuario-icono">●</span>
+                    <span>admin</span>
+                    <span class="usuario-flecha">⌄</span>
+                </div>
+            </header>
+
+            <section class="titulo-seccion">
+                <h1>Gastos</h1>
+                <p>Registro y consulta de gastos</p>
+            </section>
+
+            <section class="herramientas">
+                <div class="buscador"><span class="lupa">⌕</span><input type="text" placeholder="Buscar descripción..."></div>
+                <div class="filtro-fechas">
+                    <span>▣</span>
+                    <input type="date" value="2026-10-01" aria-label="Fecha inicial">
+                    <span class="guion">-</span>
+                    <input type="date" value="2026-10-13" aria-label="Fecha final">
+                </div>
+                <button class="btn-filtrar"><span></span> Filtrar</button>
+            </section>
+
+            <section class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr><th>Fecha</th><th>Descripción</th><th>Categoría</th><th class="monto">Monto</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>13/10/2026</td><td>Compra de insumos</td><td>Insumos</td><td class="monto">$ 480.00</td></tr>
+                        <tr><td>12/10/2026</td><td>Servicios (luz)</td><td>Servicios</td><td class="monto">$ 350.00</td></tr>
+                        <tr><td>10/10/2026</td><td>Renta local</td><td>Renta</td><td class="monto">$ 2,500.00</td></tr>
+                        <tr><td>08/10/2026</td><td>Mantenimiento equipo</td><td>Equipos</td><td class="monto">$ 600.00</td></tr>
+                        <tr><td>06/10/2026</td><td>Agua</td><td>Servicios</td><td class="monto">$ 220.00</td></tr>
+                    </tbody>
+                </table>
+                <div class="pie-tabla">
+                    <div class="paginacion">
+                        <button class="pagina seleccionada">1</button>
+                        <button class="pagina">2</button>
+                        <button class="pagina">3</button>
+                        <button class="pagina siguiente">›</button>
+                    </div>
+                    <p>Mostrando 1 - 5 de 10</p>
+                </div>
+            </section>
+        </main>
+    </div>
+<script src="js/PID_menu_d.js"></script>
+</body>
+</html>

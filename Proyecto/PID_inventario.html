@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="PID_CSS/PID_Menu_D.css">
+    <link rel="stylesheet" href="PID_CSS\PID_inventario.css">
+</head>
+<body>
+
+    	<div class="app">
+
+        <div id="menu-root"></div>
+
+        <main class="app-contenido">
+
+            <header class="encabezado">
+                <div></div>
+
+                <div class="usuario">
+                    <span class="usuario-icono">●</span>
+                    <span>admin</span>
+                    <span class="usuario-flecha">⌄</span>
+                </div>
+            </header>
+
+            <!-- TÍTULO -->
+            <section class="titulo-seccion">
+                <h1>Inventario</h1>
+                <p></p>
+            </section>
+
+            <!-- BUSCADOR Y BOTÓN -->
+            <section class="herramientas">
+
+                <div class="buscador">
+                    <span class="lupa">⌕</span>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+
+                <button class="btn-agregar">
+                    <span>＋</span>
+                    Agregar
+                </button>
+
+            </section>
+
+            <!-- TABLA VACÍA -->
+            <section class="tabla-contenedor">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="acciones">
+                                <span class="editar"></span>
+                                <span class="eliminar"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- PAGINACIÓN VACÍA -->
+                <div class="pie-tabla">
+
+                    <div class="paginacion">
+                        <span class="pagina seleccionada"></span>
+                        <span class="pagina"></span>
+                        <span class="pagina"></span>
+                        <span class="pagina siguiente">›</span>
+                    </div>
+
+                    <p></p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+<script src="js/PID_menu_d.js"></script>
+</body>
+</html>
